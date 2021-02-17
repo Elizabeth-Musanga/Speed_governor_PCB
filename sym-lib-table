@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SIM808)(type Legacy)(uri ${KIPRJMOD}/SIM808/SIM808.lib)(options "")(descr ""))
+)
