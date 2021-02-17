@@ -1,0 +1,496 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D?
+U 1 1 602D5205
+P 7650 5050
+F 0 "D?" V 7689 4932 50  0000 R CNN
+F 1 "LED" V 7598 4932 50  0000 R CNN
+F 2 "" H 7650 5050 50  0001 C CNN
+F 3 "~" H 7650 5050 50  0001 C CNN
+	1    7650 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 602D5722
+P 7350 5450
+F 0 "R?" H 7420 5496 50  0000 L CNN
+F 1 "1K" H 7420 5405 50  0000 L CNN
+F 2 "" V 7280 5450 50  0001 C CNN
+F 3 "~" H 7350 5450 50  0001 C CNN
+	1    7350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602D5DCD
+P 5950 6850
+F 0 "#PWR?" H 5950 6600 50  0001 C CNN
+F 1 "GND" H 5955 6677 50  0000 C CNN
+F 2 "" H 5950 6850 50  0001 C CNN
+F 3 "" H 5950 6850 50  0001 C CNN
+	1    5950 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602D632C
+P 4750 5800
+F 0 "C?" H 4865 5846 50  0000 L CNN
+F 1 "100nF" H 4865 5755 50  0000 L CNN
+F 2 "" H 4788 5650 50  0001 C CNN
+F 3 "~" H 4750 5800 50  0001 C CNN
+	1    4750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602D6578
+P 5050 4950
+F 0 "C?" V 4798 4950 50  0000 C CNN
+F 1 "100nF" V 4889 4950 50  0000 C CNN
+F 2 "" H 5088 4800 50  0001 C CNN
+F 3 "~" H 5050 4950 50  0001 C CNN
+	1    5050 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602D759C
+P 4750 6100
+F 0 "#PWR?" H 4750 5850 50  0001 C CNN
+F 1 "GND" H 4755 5927 50  0000 C CNN
+F 2 "" H 4750 6100 50  0001 C CNN
+F 3 "" H 4750 6100 50  0001 C CNN
+	1    4750 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5650 4750 5650
+Wire Wire Line
+	4750 5950 4750 6100
+$Comp
+L power:GND #PWR?
+U 1 1 602D87F8
+P 4800 5000
+F 0 "#PWR?" H 4800 4750 50  0001 C CNN
+F 1 "GND" H 4805 4827 50  0000 C CNN
+F 2 "" H 4800 5000 50  0001 C CNN
+F 3 "" H 4800 5000 50  0001 C CNN
+	1    4800 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4950 5300 4950
+Wire Wire Line
+	4900 4950 4800 4950
+Wire Wire Line
+	4800 4950 4800 5000
+$Comp
+L Device:R R?
+U 1 1 602D9852
+P 7650 5450
+F 0 "R?" H 7720 5496 50  0000 L CNN
+F 1 "1K" H 7720 5405 50  0000 L CNN
+F 2 "" V 7580 5450 50  0001 C CNN
+F 3 "~" H 7650 5450 50  0001 C CNN
+	1    7650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 602DA3F4
+P 7350 5050
+F 0 "D?" V 7389 4932 50  0000 R CNN
+F 1 "LED" V 7298 4932 50  0000 R CNN
+F 2 "" H 7350 5050 50  0001 C CNN
+F 3 "~" H 7350 5050 50  0001 C CNN
+	1    7350 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 4900 7350 4850
+Wire Wire Line
+	7350 4850 7650 4850
+Wire Wire Line
+	7650 4850 7650 4900
+Wire Wire Line
+	7350 5200 7350 5300
+Wire Wire Line
+	7650 5200 7650 5300
+Wire Wire Line
+	7350 5600 7350 5950
+Wire Wire Line
+	7350 5950 6950 5950
+Wire Wire Line
+	6950 6050 7650 6050
+Wire Wire Line
+	7650 6050 7650 5600
+Wire Wire Line
+	5350 6350 5200 6350
+Wire Wire Line
+	5200 6350 5200 6700
+Wire Wire Line
+	5200 6700 5950 6700
+Wire Wire Line
+	6350 6700 6350 6650
+Wire Wire Line
+	6250 6650 6250 6700
+Connection ~ 6250 6700
+Wire Wire Line
+	6250 6700 6350 6700
+Wire Wire Line
+	6150 6650 6150 6700
+Connection ~ 6150 6700
+Wire Wire Line
+	6150 6700 6250 6700
+Wire Wire Line
+	5950 6650 5950 6700
+Connection ~ 5950 6700
+Wire Wire Line
+	5950 6700 6150 6700
+Wire Wire Line
+	5950 6700 5950 6850
+Wire Wire Line
+	6050 4650 6050 4600
+Wire Wire Line
+	6050 4600 5300 4600
+Wire Wire Line
+	5300 4600 5300 4950
+Connection ~ 5300 4950
+Wire Wire Line
+	5300 4950 5350 4950
+$Comp
+L Interface_USB:FT232RL U?
+U 1 1 602D2ECD
+P 6150 5650
+F 0 "U?" H 6150 6831 50  0000 C CNN
+F 1 "FT232RL" H 6150 6740 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 7250 4750 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 6150 5650 50  0001 C CNN
+	1    6150 5650
+	1    0    0    -1  
+$EndComp
+Text Label 6950 4950 0    50   ~ 0
+RX_print
+Text Label 6950 5050 0    50   ~ 0
+TX_print
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 602E8347
+P 3750 6900
+F 0 "J?" H 3700 7617 50  0000 C CNN
+F 1 "Micro_SD_Card" H 3700 7526 50  0000 C CNN
+F 2 "" H 4900 7200 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 3750 6900 50  0001 C CNN
+	1    3750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602E9166
+P 2400 7100
+F 0 "C?" H 2515 7146 50  0000 L CNN
+F 1 "C" H 2515 7055 50  0000 L CNN
+F 2 "" H 2438 6950 50  0001 C CNN
+F 3 "~" H 2400 7100 50  0001 C CNN
+	1    2400 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602E96B0
+P 2550 7450
+F 0 "#PWR?" H 2550 7200 50  0001 C CNN
+F 1 "GND" H 2555 7277 50  0000 C CNN
+F 2 "" H 2550 7450 50  0001 C CNN
+F 3 "" H 2550 7450 50  0001 C CNN
+	1    2550 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602E9BFF
+P 4550 7550
+F 0 "#PWR?" H 4550 7300 50  0001 C CNN
+F 1 "GND" H 4555 7377 50  0000 C CNN
+F 2 "" H 4550 7550 50  0001 C CNN
+F 3 "" H 4550 7550 50  0001 C CNN
+	1    4550 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6900 2400 6900
+Wire Wire Line
+	2400 6900 2400 6950
+Wire Wire Line
+	2850 7100 2700 7100
+Wire Wire Line
+	2700 7100 2700 7350
+Wire Wire Line
+	2700 7350 2550 7350
+Wire Wire Line
+	2400 7350 2400 7250
+Wire Wire Line
+	2550 7450 2550 7350
+Connection ~ 2550 7350
+Wire Wire Line
+	2550 7350 2400 7350
+Wire Wire Line
+	4550 7500 4550 7550
+NoConn ~ 6950 5150
+NoConn ~ 6950 5250
+NoConn ~ 6950 5350
+NoConn ~ 6950 5450
+NoConn ~ 6950 5550
+NoConn ~ 6950 5650
+NoConn ~ 6950 6150
+NoConn ~ 6950 6250
+NoConn ~ 6950 6350
+NoConn ~ 5350 6050
+NoConn ~ 5350 5850
+Text Label 5350 5250 1    50   ~ 0
+D+
+Text Label 5350 5350 1    50   ~ 0
+D-
+$Comp
+L Connector:SIM_Card J?
+U 1 1 602F78C5
+P 1300 7150
+F 0 "J?" H 1930 7250 50  0000 L CNN
+F 1 "SIM_Card" H 1930 7159 50  0000 L CNN
+F 2 "" H 1300 7500 50  0001 C CNN
+F 3 " ~" H 1250 7150 50  0001 C CNN
+	1    1300 7150
+	1    0    0    -1  
+$EndComp
+Text Label 800  6850 2    50   ~ 0
+VSIM
+Text Label 800  6950 2    50   ~ 0
+SIMRST
+Text Label 800  7050 2    50   ~ 0
+SIMCLK
+Text Label 800  7350 2    50   ~ 0
+SIMDIO
+$Comp
+L power:GND #PWR?
+U 1 1 602FA646
+P 750 7150
+F 0 "#PWR?" H 750 6900 50  0001 C CNN
+F 1 "GND" V 755 7022 50  0000 R CNN
+F 2 "" H 750 7150 50  0001 C CNN
+F 3 "" H 750 7150 50  0001 C CNN
+	1    750  7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  7150 800  7150
+Text Label 800  7150 2    50   ~ 0
+GND
+NoConn ~ 800  7250
+$Comp
+L A9G:A9G U?
+U 1 1 603028FE
+P 2050 3650
+F 0 "U?" H 3650 5631 50  0000 C CNN
+F 1 "A9G" H 3650 5540 50  0000 C CNN
+F 2 "" H 4000 5450 50  0001 C CNN
+F 3 "" H 4000 5450 50  0001 C CNN
+	1    2050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603041BE
+P 3800 1750
+F 0 "#PWR?" H 3800 1500 50  0001 C CNN
+F 1 "GND" H 3805 1577 50  0000 C CNN
+F 2 "" H 3800 1750 50  0001 C CNN
+F 3 "" H 3800 1750 50  0001 C CNN
+	1    3800 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603044F6
+P 4200 3450
+F 0 "#PWR?" H 4200 3200 50  0001 C CNN
+F 1 "GND" H 4205 3277 50  0000 C CNN
+F 2 "" H 4200 3450 50  0001 C CNN
+F 3 "" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603049E0
+P 2200 2850
+F 0 "#PWR?" H 2200 2600 50  0001 C CNN
+F 1 "GND" V 2205 2722 50  0000 R CNN
+F 2 "" H 2200 2850 50  0001 C CNN
+F 3 "" H 2200 2850 50  0001 C CNN
+	1    2200 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60304C79
+P 5050 3150
+F 0 "#PWR?" H 5050 2900 50  0001 C CNN
+F 1 "GND" V 5055 3022 50  0000 R CNN
+F 2 "" H 5050 3150 50  0001 C CNN
+F 3 "" H 5050 3150 50  0001 C CNN
+	1    5050 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60308974
+P 4000 1750
+F 0 "#PWR?" H 4000 1500 50  0001 C CNN
+F 1 "GND" H 4005 1577 50  0000 C CNN
+F 2 "" H 4000 1750 50  0001 C CNN
+F 3 "" H 4000 1750 50  0001 C CNN
+	1    4000 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 3150 5050 3150
+Wire Wire Line
+	2400 2850 2200 2850
+Wire Wire Line
+	3800 1750 3800 1850
+Wire Wire Line
+	4000 1750 4000 1850
+Wire Wire Line
+	4200 3350 4200 3450
+Text Label 2400 2150 2    50   ~ 0
+SDD3
+Text Label 2400 2250 2    50   ~ 0
+SDD2
+Text Label 2400 2350 2    50   ~ 0
+SDD1
+Text Label 2400 2450 2    50   ~ 0
+SDD0
+Text Label 2400 2550 2    50   ~ 0
+SDCMD
+Text Label 2400 2650 2    50   ~ 0
+SDCLK
+Text Label 2400 2950 2    50   ~ 0
+VBAT
+Text Label 2400 3050 2    50   ~ 0
+VBAT
+NoConn ~ 2400 2750
+NoConn ~ 2400 3150
+NoConn ~ 2400 3250
+NoConn ~ 3100 3350
+NoConn ~ 3300 3350
+NoConn ~ 3400 3350
+NoConn ~ 3500 3350
+NoConn ~ 3600 3350
+NoConn ~ 3700 3350
+NoConn ~ 4900 3250
+NoConn ~ 4900 2750
+NoConn ~ 4900 2650
+NoConn ~ 4900 2550
+NoConn ~ 4900 2450
+NoConn ~ 3600 1850
+NoConn ~ 3700 1850
+NoConn ~ 4100 1850
+NoConn ~ 2400 1950
+NoConn ~ 2400 2050
+Text Label 3000 3350 3    50   ~ 0
+ADC0
+Text Label 3200 3350 3    50   ~ 0
+V5V
+Text Label 3900 3350 3    50   ~ 0
+RelayTrig
+Text Label 4000 3350 3    50   ~ 0
+buzzer
+Text Label 4100 3350 3    50   ~ 0
+I027
+Text Label 4200 3350 3    50   ~ 0
+GND
+Text Label 4300 3350 3    50   ~ 0
+GND
+Text Label 2850 3350 3    50   ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 6032038C
+P 4300 3450
+F 0 "#PWR?" H 4300 3200 50  0001 C CNN
+F 1 "GND" H 4305 3277 50  0000 C CNN
+F 2 "" H 4300 3450 50  0001 C CNN
+F 3 "" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60320D00
+P 2850 3400
+F 0 "#PWR?" H 2850 3150 50  0001 C CNN
+F 1 "GND" H 2855 3227 50  0000 C CNN
+F 2 "" H 2850 3400 50  0001 C CNN
+F 3 "" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3400 2850 3350
+Wire Wire Line
+	4300 3450 4300 3350
+Text Label 4900 3150 0    50   ~ 0
+GND
+Text Label 4900 3050 0    50   ~ 0
+I028
+Text Label 4900 2950 0    50   ~ 0
+I030
+Text Label 4900 2850 0    50   ~ 0
+STATE
+Text Label 4900 1950 0    50   ~ 0
+SIMCLK
+Text Label 4900 2050 0    50   ~ 0
+VSIM
+Text Label 4900 2150 0    50   ~ 0
+SIMDIO
+Text Label 4900 2250 0    50   ~ 0
+HST_TXD
+Text Label 4900 2350 0    50   ~ 0
+HST_RXD
+Text Label 4000 1800 1    50   ~ 0
+GND
+Text Label 3800 1800 1    50   ~ 0
+GND
+Text Label 4200 1850 1    50   ~ 0
+SIMRST
+Text Label 3900 1850 1    50   ~ 0
+GSMRF
+Text Label 3500 1850 1    50   ~ 0
+RXD_MCU
+Text Label 3400 1850 1    50   ~ 0
+TXD_MCU
+Text Label 3300 1850 1    50   ~ 0
+TrigPin
+Text Label 3200 1850 1    50   ~ 0
+EngOn
+Text Label 3000 1850 1    50   ~ 0
+TX_Print
+Text Label 3100 1850 1    50   ~ 0
+RX_Print
+$EndSCHEMATC
