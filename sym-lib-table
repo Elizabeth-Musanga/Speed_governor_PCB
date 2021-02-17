@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name SIM808)(type Legacy)(uri ${KIPRJMOD}/SIM808/SIM808.lib)(options "")(descr ""))
+  (lib (name LM2596S-ADJ)(type Legacy)(uri ${KIPRJMOD}/LM2596S-ADJ/LM2596S-ADJ.lib)(options "")(descr ""))
 )
