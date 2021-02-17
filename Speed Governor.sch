@@ -493,4 +493,353 @@ Text Label 3000 1850 1    50   ~ 0
 TX_Print
 Text Label 3100 1850 1    50   ~ 0
 RX_Print
+$Comp
+L Device:R R?
+U 1 1 603274E3
+P 1300 6250
+F 0 "R?" V 1093 6250 50  0000 C CNN
+F 1 "200K" V 1184 6250 50  0000 C CNN
+F 2 "" V 1230 6250 50  0001 C CNN
+F 3 "~" H 1300 6250 50  0001 C CNN
+	1    1300 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60327A9E
+P 2100 6200
+F 0 "#PWR?" H 2100 5950 50  0001 C CNN
+F 1 "GND" V 2105 6072 50  0000 R CNN
+F 2 "" H 2100 6200 50  0001 C CNN
+F 3 "" H 2100 6200 50  0001 C CNN
+	1    2100 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60329A1D
+P 1800 6200
+F 0 "R?" V 1593 6200 50  0000 C CNN
+F 1 "100K" V 1684 6200 50  0000 C CNN
+F 2 "" V 1730 6200 50  0001 C CNN
+F 3 "~" H 1800 6200 50  0001 C CNN
+	1    1800 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 6200 2100 6200
+Wire Wire Line
+	1450 6250 1550 6250
+Wire Wire Line
+	1600 6250 1600 6200
+Wire Wire Line
+	1600 6200 1650 6200
+Wire Wire Line
+	1550 6250 1550 6050
+Connection ~ 1550 6250
+Wire Wire Line
+	1550 6250 1600 6250
+Text Label 1550 6050 1    50   ~ 0
+ADC0
+Text Label 1150 6250 1    50   ~ 0
+VBAT
+Text Label 1950 6200 0    50   ~ 0
+GND
+$Comp
+L Regulator_Linear:L78L33_SOT89 U?
+U 1 1 60330736
+P 1550 5300
+F 0 "U?" H 1550 5542 50  0000 C CNN
+F 1 "L78L33_SOT89" H 1550 5451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 1550 5500 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 1550 5250 50  0001 C CNN
+	1    1550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6033441E
+P 900 5700
+F 0 "#PWR?" H 900 5450 50  0001 C CNN
+F 1 "GND" V 905 5572 50  0000 R CNN
+F 2 "" H 900 5700 50  0001 C CNN
+F 3 "" H 900 5700 50  0001 C CNN
+	1    900  5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 5600 1550 5700
+Wire Wire Line
+	1550 5700 900  5700
+Text Label 900  5700 0    50   ~ 0
+GND
+Wire Wire Line
+	1850 5300 2000 5300
+Wire Wire Line
+	1250 5300 1050 5300
+Text Label 2000 5300 0    50   ~ 0
+3V3
+Text Label 1050 5300 0    50   ~ 0
+V12
+$Comp
+L Device:Antenna_Loop AE?
+U 1 1 6033ABF5
+P 2750 5300
+F 0 "AE?" H 2980 5314 50  0000 L CNN
+F 1 "Antenna_Loop" H 2980 5223 50  0000 L CNN
+F 2 "" H 2750 5300 50  0001 C CNN
+F 3 "~" H 2750 5300 50  0001 C CNN
+	1    2750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6033B29B
+P 2850 5650
+F 0 "#PWR?" H 2850 5400 50  0001 C CNN
+F 1 "GND" H 2855 5477 50  0000 C CNN
+F 2 "" H 2850 5650 50  0001 C CNN
+F 3 "" H 2850 5650 50  0001 C CNN
+	1    2850 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5500 2850 5650
+Wire Wire Line
+	2750 5500 2750 5650
+Text Label 2850 5650 1    50   ~ 0
+GND
+Text Label 2750 5650 2    50   ~ 0
+GSMRF
+$Comp
+L Regulator_Switching:LM2596S-ADJ U?
+U 1 1 603415FF
+P 1850 4250
+F 0 "U?" H 1850 4617 50  0000 C CNN
+F 1 "LM2596S-ADJ" H 1850 4526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 1900 4000 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 1850 4250 50  0001 C CNN
+	1    1850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 60345FCE
+P 2700 4600
+F 0 "C?" H 2815 4646 50  0000 L CNN
+F 1 "330uF" H 2815 4555 50  0000 L CNN
+F 2 "" H 2700 4600 50  0001 C CNN
+F 3 "~" H 2700 4600 50  0001 C CNN
+	1    2700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6034682B
+P 2950 4600
+F 0 "C?" H 3065 4646 50  0000 L CNN
+F 1 "100nF" H 3065 4555 50  0000 L CNN
+F 2 "" H 2988 4450 50  0001 C CNN
+F 3 "~" H 2950 4600 50  0001 C CNN
+	1    2950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60347498
+P 950 4500
+F 0 "#PWR?" H 950 4250 50  0001 C CNN
+F 1 "GND" H 955 4327 50  0000 C CNN
+F 2 "" H 950 4500 50  0001 C CNN
+F 3 "" H 950 4500 50  0001 C CNN
+	1    950  4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 60347A07
+P 850 4250
+F 0 "C?" H 965 4296 50  0000 L CNN
+F 1 "CP1" H 965 4205 50  0000 L CNN
+F 2 "" H 850 4250 50  0001 C CNN
+F 3 "~" H 850 4250 50  0001 C CNN
+	1    850  4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  4100 850  4050
+Wire Wire Line
+	850  4050 1050 4050
+Wire Wire Line
+	850  4400 850  4450
+Wire Wire Line
+	850  4450 950  4450
+Wire Wire Line
+	1050 4450 1050 4400
+Wire Wire Line
+	950  4500 950  4450
+Connection ~ 950  4450
+Wire Wire Line
+	950  4450 1050 4450
+Text Label 1350 4150 2    50   ~ 0
+V12
+Text Label 1350 4350 2    50   ~ 0
+P5
+Wire Wire Line
+	2350 4350 2350 4250
+Wire Wire Line
+	2350 4250 2400 4250
+Wire Wire Line
+	2400 4250 2400 4000
+Wire Wire Line
+	1050 4050 1050 4100
+Wire Wire Line
+	2400 4000 1300 4000
+Wire Wire Line
+	1300 4000 1300 4050
+Wire Wire Line
+	1300 4050 1050 4050
+Connection ~ 1050 4050
+$Comp
+L Device:C C?
+U 1 1 60348002
+P 1050 4250
+F 0 "C?" H 1165 4296 50  0000 L CNN
+F 1 "C" H 1165 4205 50  0000 L CNN
+F 2 "" H 1088 4100 50  0001 C CNN
+F 3 "~" H 1050 4250 50  0001 C CNN
+	1    1050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60365013
+P 2450 4600
+F 0 "R?" H 2520 4646 50  0000 L CNN
+F 1 "100K" H 2520 4555 50  0000 L CNN
+F 2 "" V 2380 4600 50  0001 C CNN
+F 3 "~" H 2450 4600 50  0001 C CNN
+	1    2450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6036677D
+P 3150 4600
+F 0 "R?" H 3220 4646 50  0000 L CNN
+F 1 "470R" H 3220 4555 50  0000 L CNN
+F 2 "" V 3080 4600 50  0001 C CNN
+F 3 "~" H 3150 4600 50  0001 C CNN
+	1    3150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60366AF9
+P 2250 4800
+F 0 "R?" V 2043 4800 50  0000 C CNN
+F 1 "43K" V 2134 4800 50  0000 C CNN
+F 2 "" V 2180 4800 50  0001 C CNN
+F 3 "~" H 2250 4800 50  0001 C CNN
+	1    2250 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60368A6C
+P 2000 4850
+F 0 "#PWR?" H 2000 4600 50  0001 C CNN
+F 1 "GND" H 2005 4677 50  0000 C CNN
+F 2 "" H 2000 4850 50  0001 C CNN
+F 3 "" H 2000 4850 50  0001 C CNN
+	1    2000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603692E8
+P 2950 4800
+F 0 "#PWR?" H 2950 4550 50  0001 C CNN
+F 1 "GND" H 2955 4627 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4450 3150 4400
+Wire Wire Line
+	3150 4400 2950 4400
+Wire Wire Line
+	2450 4400 2450 4450
+Wire Wire Line
+	2700 4450 2700 4400
+Connection ~ 2700 4400
+Wire Wire Line
+	2700 4400 2450 4400
+Wire Wire Line
+	2950 4450 2950 4400
+Connection ~ 2950 4400
+Wire Wire Line
+	2950 4400 2700 4400
+Wire Wire Line
+	2700 4750 2700 4800
+Wire Wire Line
+	3150 4800 3150 4750
+Wire Wire Line
+	2950 4750 2950 4800
+Connection ~ 2950 4800
+Wire Wire Line
+	2950 4800 3150 4800
+Wire Wire Line
+	2700 4800 2950 4800
+Wire Wire Line
+	2400 4800 2450 4800
+Wire Wire Line
+	2450 4800 2450 4750
+Wire Wire Line
+	2100 4800 2000 4800
+Wire Wire Line
+	2000 4800 2000 4850
+Wire Wire Line
+	2350 4150 2450 4150
+Wire Wire Line
+	2450 4150 2450 4400
+Connection ~ 2450 4400
+$Comp
+L power:GND #PWR?
+U 1 1 60386AE7
+P 1850 4600
+F 0 "#PWR?" H 1850 4350 50  0001 C CNN
+F 1 "GND" H 1855 4427 50  0000 C CNN
+F 2 "" H 1850 4600 50  0001 C CNN
+F 3 "" H 1850 4600 50  0001 C CNN
+	1    1850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4600 1850 4550
+Text Label 3150 4400 0    50   ~ 0
+VBAT
+Text Label 2950 4800 1    50   ~ 0
+GND
+$Comp
+L STM32L432KCU6:STM32L432KCU6 IC?
+U 1 1 6038E929
+P 6950 3100
+F 0 "IC?" H 9594 3146 50  0000 L CNN
+F 1 "STM32L432KCU6" H 9594 3055 50  0000 L CNN
+F 2 "QFN50P500X500X60-33N-D" H 9400 4300 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/24/01/9f/59/f0/83/47/fc/DM00257205.pdf/files/DM00257205.pdf/jcr:content/translations/en.DM00257205.pdf" H 9400 4200 50  0001 L CNN
+F 4 "STMICROELECTRONICS - STM32L432KCU6 - MCU, ARM CORTEX-M4, 80MHZ, UFQFPN-32" H 9400 4100 50  0001 L CNN "Description"
+F 5 "0.6" H 9400 4000 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 9400 3900 50  0001 L CNN "Manufacturer_Name"
+F 7 "STM32L432KCU6" H 9400 3800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-STM32L432KCU6" H 9400 3700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32L432KCU6?qs=dTJS0cRn7oiybcTRwI97Tw%3D%3D" H 9400 3600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "STM32L432KCU6" H 9400 3500 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/stm32l432kcu6/stmicroelectronics" H 9400 3400 50  0001 L CNN "Arrow Price/Stock"
+	1    6950 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
