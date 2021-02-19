@@ -2039,8 +2039,6 @@ Wire Wire Line
 	1300 2600 1300 2550
 Wire Wire Line
 	2750 2650 2750 2550
-Text Label 3350 2350 0    50   ~ 0
-GND
 Text Label 3350 2250 0    50   ~ 0
 IO28
 Text Label 3350 2150 0    50   ~ 0
@@ -2588,4 +2586,6 @@ F 3 "~" H 6150 7700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 7750 6150 7700
+Text Label 3550 2350 2    50   ~ 0
+GND
 $EndSCHEMATC
